@@ -58,7 +58,7 @@ function buildCopy() {
 }
 
 function buildHtml() {
-	return src(['app/**/*.html', 'app/**/*.php', '!app/parts/**/*'])
+	return src(['app/**/*.html', 'app/**/*.php', '!app/includes/**/*'])
 	.pipe(ssi({ root: 'app/' }))
 	.pipe(dest('dist'));
 }

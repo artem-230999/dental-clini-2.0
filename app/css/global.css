@@ -1,0 +1,68 @@
+/* Global START */
+:root {
+	--font: 'Roboto';
+	--color-black: #242222;
+	--color-1: #2581d9;
+	--color-2: #41bef7;
+	--color-text: #636060;
+	--color-3: #bceafe;
+	--color-4: #f6ecff;
+	--color-5: #024260;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: var(--font);
+	font-size: 16px;
+	line-height: 1.6;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+strong {
+	font-weight: 700;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+  list-style-type: none;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+/* button */
+.button-v1 {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 16px 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: var(--color-1);
+	transition: background-color .4s ease, transform .4s ease;
+}
+.button-v1:hover {
+	background-color: var(--color-2);
+}
+.button-v1:active {
+	transform: scale(.98);
+}
